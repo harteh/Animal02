@@ -4,12 +4,14 @@ header{
     width: 100%;
     height: 40px;
     background-color: #007cf9;
+    position: relative;
 }
 /* 헤더 윗부분 */
 header .h_top{
     max-width: 1200px;
     height: 40px;
     margin: 0 auto;
+    margin-bottom: 20px;
     background-color: #007cf9;
 }
 header .h_top p{
@@ -69,12 +71,11 @@ header .h_bottom .logo p{
     /* width: 100%; */
 }
 .nav_wrap #nav{
-    height: 130px;
     width: 600px;
+    height: 130px;
     margin: 0 auto;
     float: left;
 }
-
 #nav .nav_list > li{
     display: inline-block;
     /* width: calc(570px / 4); */
@@ -154,7 +155,6 @@ header .h_bottom .find input[type="submit"]{
     cursor: pointer;
 }
 /* .dep1_txt에 호버 시 .hvr-underline-from-center 효과 주기 */
-
 .dep1_txt {
     display: inline-block;
     vertical-align: middle;
@@ -188,5 +188,65 @@ header .h_bottom .find input[type="submit"]{
     right: 0;
   }
   /* .dep1_txt에 호버 시 .hvr-underline-from-center 효과 주기 끝 */
-
 /* 헤더영역 끝 */
+/* 슬라이드 배너 영역 시작 */
+/* !! 슬라이드 배너 윗 부분에 100px 여백 주기 */
+.slide{
+    width: 1200px;
+    height: 450px;
+    margin: 0 auto;
+    overflow: hidden;
+    clear: both;
+    position: relative;
+    background-color: olive;
+}
+.slide ul{
+    width: calc(1200px * 4);
+    width: 4800px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 0;
+}
+.slide ul li{
+    display: inline-block;
+    width: 1200px;
+    height: 450px;
+}
+.slide ul li:nth-child(1){
+    background: url(../images/banner01.jpg) center;
+    background-size: 100% ;
+}
+.slide ul li:nth-child(2){
+    background: url(../images/banner02.jpg) center;
+    background-size: 100%;
+}
+.slide ul li:nth-child(3){
+    background: url(../images/banner03.jpg) center;
+    background-size: 100%;
+}
+.slide ul li:nth-child(4){
+    background: url(../images/banner04.jpg) center;
+    background-size: 100%;
+}
+/* 버튼 부분 설정 */
+.slide #back{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    cursor: pointer;
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+.slide #next{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+/* 슬라이드 배너 영역 끝 */
