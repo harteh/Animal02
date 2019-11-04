@@ -1,0 +1,155 @@
+@charset "utf-8";
+/* 헤어영역 시작 */
+header{
+    width: 100%;
+    height: 40px;
+    background-color: #007cf9;
+}
+/* 헤더 윗부분 */
+header .h_top{
+    max-width: 1200px;
+    height: 40px;
+    margin: 0 auto;
+    background-color: #007cf9;
+}
+header .h_top p{
+    text-align: center;
+    color: #f4f4f4;
+    line-height: 40px;
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 12px;
+}
+/* 헤더 아랫부분 */
+header .h_bottom{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* float 해제하기 */
+header .h_bottom::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+/* 로고 부분 */
+header .h_bottom .logo{
+    width: 400px;
+    height: 130px;
+    margin: auto 20px;
+    float: left;
+}
+header .h_bottom .logo h1{
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 10px auto 20px;
+    position: relative;
+}
+header .h_bottom .logo h1::after{
+    content: "";
+    width: 40px;
+    height: 5px;
+    background-color: #007cf9;
+    position: absolute;
+    top: 55px;
+    left: 37px;
+    transition: all 0.8s;
+}
+header .h_bottom .logo h1:hover{
+    cursor: pointer;
+}
+header .h_bottom .logo h1:hover::after{
+    width: 0;
+}
+header .h_bottom .logo p{
+    font-size: 21px;
+    margin-left: 40px;
+}
+/* 네비게이션 부분 */
+.nav_wrap{
+    /* width: 100%; */
+}
+.nav_wrap #nav{
+    height: 130px;
+    width: 600px;
+    margin: 0 auto;
+    float: left;
+}
+
+#nav .nav_list > li{
+    display: inline-block;
+    /* width: calc(570px / 4); */
+    width: calc(100% / 4);
+    float: left;
+}
+#nav .nav_list > li > a{
+    font-family: 'Nanum Gothic Coding', monospace;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+    padding-top: 1px;
+    line-height: 100px;
+}
+#nav .nav_list_wrap > ul > li.dep1 {position:relative;}
+#nav .nav_list_wrap > ul > li.dep1 > a {
+    display: block;
+    font-weight: 600;
+}
+#nav .nav_list_wrap > ul > li.dep1 a:hover{
+    color: #007cf9;
+}
+#nav .nav_list_wrap > ul > li.dep1 .dep2{
+    z-index: 100;
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #ffffff;
+}
+#nav .nav_list_wrap > ul > li.dep1 .dep2 li{
+    padding: 5px 0;
+}
+#nav .nav_list_wrap > ul > li.dep1 .dep2 li a{
+    text-align: center;
+    display: block;
+    color: #666;
+}
+#nav .nav_list_wrap > ul > li.dep1 .dep2 li a:hover{
+    color: #000;
+}
+/* 찾기 버튼 부분 */
+header .h_bottom .find{
+    width: 150px;
+    height: 130px;
+    float: right;
+    position: relative;
+}
+header .h_bottom .find input[type="search"]{
+    width: 100px;
+    height: 30px;
+    border: 2px solid #999;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: right;
+    color: #999;
+    font-size: 11px;
+    position: absolute;
+    top: 35px;
+}
+header .h_bottom .find input[type="submit"]{
+    width: 30px;
+    height: 30px;
+    background: url(../images/find01.jpg) no-repeat;
+    position: absolute;
+    top: 35px;
+    left: 105px;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+}
+.h_bottom .find input[type="submit"]:hover{
+    cursor: pointer;
+}
+/* 헤더영역 끝 */
