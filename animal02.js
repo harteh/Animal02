@@ -20,7 +20,7 @@ $(document).ready(function(){
     var img_count;
     var img_position = 1;
 
-    imgs = $(".slide ul");
+    imgs = $(".slide_wrap");
     img_count = imgs.children().length;
     
     //버튼을 클릭했을 대 함수 실행

@@ -24,7 +24,9 @@ header .h_top p{
 /* 헤더 아랫부분 */
 header .h_bottom{
     max-width: 1200px;
+    height: 130px;
     margin: 0 auto;
+    margin-bottom: 100px;
 }
 /* float 해제하기 */
 header .h_bottom::after{
@@ -200,39 +202,70 @@ header .h_bottom .find input[type="submit"]{
     position: relative;
     background-color: olive;
 }
-.slide ul{
+.slide .slide_wrap{
     width: calc(1200px * 4);
     width: 4800px;
+    height: 450px;
     position: absolute;
     top: 0;
     left: 0;
     font-size: 0;
 }
-.slide ul li{
+.slide .slide_wrap .box{ 
     display: inline-block;
     width: 1200px;
     height: 450px;
+    font-family: 'Nanum Gothic Coding', monospace;
 }
-.slide ul li:nth-child(1){
+.slide .slide_wrap .box h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+.slide .slide_wrap .box p,
+.slide .slide_wrap .box a{
+    font-size: 18px;
+}
+.slide .slide_wrap .box a{
+    border-bottom: 3px solid #007cf9;
+}
+/* 박스 1번 설정 */
+.slide .slide_wrap .box:nth-child(1) h2,
+.slide .slide_wrap .box:nth-child(1) p,
+.slide .slide_wrap .box:nth-child(1) a{
+    position: relative;     
+    top: 100px;
+    left: 70px;
+    margin-bottom: 5px; 
+}
+.slide .slide_wrap .box:nth-child(1) h2:last-of-type,
+.slide .slide_wrap .box:nth-child(1) p:last-of-type{
+    /* margin-bottom: 30px; */
+}
+/* 박스 2번 설정 */
+/* 박스 3번 설정 */
+/* 박스 4번 설정 */
+
+
+.slide .slide_wrap .box:nth-child(1){
     background: url(../images/banner01.jpg) center;
     background-size: 100% ;
 }
-.slide ul li:nth-child(2){
+.slide .slide_wrap > .box:nth-child(2){
     background: url(../images/banner02.jpg) center;
     background-size: 100%;
 }
-.slide ul li:nth-child(3){
+.slide .slide_wrap .box:nth-child(3){
     background: url(../images/banner03.jpg) center;
     background-size: 100%;
 }
-.slide ul li:nth-child(4){
+.slide .slide_wrap .box:nth-child(4){
     background: url(../images/banner04.jpg) center;
     background-size: 100%;
 }
 /* 버튼 부분 설정 */
 .slide #back{
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     position: absolute;
     top: 50%;
     left: 0;
@@ -241,8 +274,8 @@ header .h_bottom .find input[type="submit"]{
     transform: rotateY(180deg);
 }
 .slide #next{
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     position: absolute;
     top: 50%;
     right: 0;
