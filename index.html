@@ -8,16 +8,17 @@
     integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
     crossorigin="anonymous"></script>
     <script src="animal02.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding&display=swap">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script|Nanum+Gothic+Coding|Ubuntu+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/animal02.css">
 </head>
 <body>
 <!-- 헤더영역 시작 -->
     <header>
-        <div class="h_top">
-            <p>서울특별시 용산구 서빙고동 서빙고로 137 | 02.2077.9000</p>
+        <div class="h_top_wrap">
+            <div class="h_top">
+                <p>서울특별시 용산구 서빙고동 서빙고로 137 | 02.2077.9000</p>
+            </div>
         </div>
         <div class="h_bottom">
             <!-- 로고 영역 -->
@@ -120,7 +121,31 @@
     </div>
 <!-- 슬라이드 영역 끝 -->
 <!-- 후원버튼 영역 시작 : 텍스트, 버튼-->
-    <div class="supprot"></div>
+    <div class="support">
+        <div class="s_txt">
+            <span id="blue">여러분의 후원</span>이 <span id="blue">힘</span>입니다.
+        </div>
+        <div class="s_btn">
+            <div class="s_btn_box">
+                <a href="#">
+                    <img src="images/s_icon01.png" alt="후원아이콘1">  
+                    <div class="s_btn_txt">정기후원</div>
+                </a>
+            </div>
+            <div class="s_btn_box">
+                <a href="#">
+                    <img src="images/s_icon02.png" alt="후원아이콘2">
+                    <div class="s_btn_txt">일시후원</div>
+                </a>
+            </div>
+            <div class="s_btn_box">
+                <a href="#">
+                    <img src="images/s_icon03.png" alt="후원아이콘3">
+                    <div class="s_btn_txt">후원안내</div>
+                </a>
+            </div>
+        </div>
+    </div>
 <!-- 후원버튼 영역 끝 -->
 <!-- 구조동물공고 영역 시작 -->
     <div class="gallery" id="save"></div>

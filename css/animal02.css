@@ -2,11 +2,15 @@
 /* 헤더영역 시작 */
 header{
     width: 100%;
-    height: 40px;
-    background-color: #007cf9;
+    height: 200px;
     position: relative;
 }
 /* 헤더 윗부분 */
+header .h_top_wrap{
+    width: 100%;
+    height: 40px;
+    background-color: #007cf9;
+}
 header .h_top{
     max-width: 1200px;
     height: 40px;
@@ -24,7 +28,8 @@ header .h_top p{
 /* 헤더 아랫부분 */
 header .h_bottom{
     max-width: 1200px;
-    /* height: 130px; */
+    height: 130px;
+    position: relative;
     margin: 0 auto;
 }
 /* float 해제하기 */
@@ -83,8 +88,6 @@ header .h_bottom .logo p{
 }
 #nav .nav_list > li{
     display: inline-block;
-    /* width: calc(570px / 4); */
-    width: calc(100% / 4);
     float: left;
 }
 #nav .nav_list > li > a{
@@ -94,8 +97,8 @@ header .h_bottom .logo p{
     font-size: 16px;
     color: #000;
     font-weight: 500;
-    padding-top: 1px;
     line-height: 100px;
+    padding: 1px 20px;
 }
 #nav .nav_list_wrap > ul > li.dep1 {position:relative;}
 #nav .nav_list_wrap > ul > li.dep1 > a {
@@ -193,7 +196,7 @@ header .h_bottom .find input[type="submit"]{
     left: 0;
     right: 0;
   }
-  /* .dep1_txt에 호버 시 .hvr-underline-from-center 효과 주기 끝 */
+/* .dep1_txt에 호버 시 .hvr-underline-from-center 효과 주기 끝 */
 /* 헤더영역 끝 */
 /* 슬라이드 배너 영역 시작 */
 .slide{
@@ -203,8 +206,7 @@ header .h_bottom .find input[type="submit"]{
     overflow: hidden;
     clear: both;
     position: relative;
-    /* !! 슬라이드 배너 윗 부분에 100px 여백 주기 */
-    top: 80px;
+    margin-top: 50px;
 }
 .slide .slide_wrap{
     width: 4800px;
@@ -221,17 +223,40 @@ header .h_bottom .find input[type="submit"]{
     width: 1200px;
     height: 450px;
     font-family: 'Nanum Gothic Coding', monospace;
+    position: relative;
 }
 .slide .slide_wrap .box h2{
-    font-size: 40px;
-    font-weight: 600;
+    font-size: 36px;
+    font-weight: 600; 
+    line-height: 45px;   
 }
 .slide .slide_wrap .box p,
 .slide .slide_wrap .box a{
     font-size: 18px;
+    line-height: 22px;
 }
 .slide .slide_wrap .box a{
     border-bottom: 3px solid #007cf9;
+    padding-bottom: 10px;
+}
+.slide .slide_wrap .box a:hover{
+    font-weight: bold;
+    color: #666;
+}
+
+
+/* 문장 여백 설정 */
+.slide .slide_wrap .box:nth-child(1) h2:last-of-type,
+.slide .slide_wrap .box:nth-child(2) h2:last-of-type,
+.slide .slide_wrap .box:nth-child(3) h2:last-of-type,
+.slide .slide_wrap .box:nth-child(4) h2:last-of-type{
+    margin-bottom: 25px;
+}
+.slide .slide_wrap .box.box:nth-child(1) p:last-of-type,
+.slide .slide_wrap .box.box:nth-child(2) p:last-of-type,
+.slide .slide_wrap .box.box:nth-child(3) p:last-of-type,
+.slide .slide_wrap .box.box:nth-child(4) p:last-of-type{
+    margin-top: 20px;
 }
 /* 박스 1번, 3번 설정 */
 .slide .slide_wrap .box:nth-child(1) h2,
@@ -240,14 +265,7 @@ header .h_bottom .find input[type="submit"]{
 .slide .slide_wrap .box:nth-child(3) p{
     position: relative;     
     top: 90px;
-    left: 70px;
-    margin-bottom: 5px; 
-}
-.slide .slide_wrap .box:nth-child(1) h2:last-of-type,
-.slide .slide_wrap .box:nth-child(1) p:last-of-type,
-.slide .slide_wrap .box:nth-child(3) h2:last-of-type,
-.slide .slide_wrap .box:nth-child(3) p:last-of-type{
-    margin: 20px auto;
+    left: 70px;    
 }
 /* 박스 2번,4번 설정 */
 .slide .slide_wrap .box:nth-child(2) h2,
@@ -256,17 +274,10 @@ header .h_bottom .find input[type="submit"]{
 .slide .slide_wrap .box:nth-child(4) p{
     text-align: right;
     position: relative;
-    top: 110px;
+    top: 100px;
     right: 80px;
     margin-bottom: 5px;    
 }
-.slide .slide_wrap .box:nth-child(2) h2:last-of-type,
-.slide .slide_wrap .box:nth-child(2) p:last-of-type,
-.slide .slide_wrap .box:nth-child(4) h2:last-of-type,
-.slide .slide_wrap .box:nth-child(4) p:last-of-type{
-    margin: 25px auto;
-}
-
 
 .slide .slide_wrap .box:nth-child(1){
     background: url(../images/banner01.jpg) center;
@@ -305,3 +316,74 @@ header .h_bottom .find input[type="submit"]{
     z-index: 1;
 }
 /* 슬라이드 배너 영역 끝 */
+/* 후원버튼 영역 시작 */
+/* 후원버튼 왼쪽 문구 부분 */
+.support{
+    max-width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    clear: both;
+    background-color: #f6f9fb;
+}
+/* float 해제하기 */
+.support::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.support .s_txt {
+    width: calc(50% - 80px);
+    height: 100%;
+    float: left;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 32px;
+    line-height: 100px;
+    padding-left: 80px;
+}
+
+.support .s_txt span{ font-size: 38px;}
+#blue{ color: #007cf9; }
+
+/* 후원버튼 오른쪽 아이콘 부분 */
+.support .s_btn{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+/* float 해제하기 */
+.support .s_btn::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.support .s_btn .s_btn_box{
+    width: 200px;
+    height: 100%;
+    float: left;
+    line-height: 100px;
+}
+
+.support .s_btn .s_btn_box img{
+    width: 40px;
+    height: 40px;
+    float: left;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-right: 10px;
+}
+.support .s_btn .s_btn_box .s_btn_txt{
+    width: 150px;
+    height: 100px;
+    float: left;
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 19px;
+}
+/* 후원버튼 영역 끝 */
+
+
+/* 폰트 설정
+font-family: 'Nanum Gothic Coding', monospace;
+font-family: 'Nanum Brush Script', cursive;
+font-family: 'Ubuntu Mono', monospace;
+*/
