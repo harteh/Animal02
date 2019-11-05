@@ -205,9 +205,9 @@ header .h_bottom .find input[type="submit"]{
     clear: both;
     position: relative;
     background-color: olive;
+    top: 100px;
 }
 .slide .slide_wrap{
-    /* width: calc(1200px * 4); */
     width: 4800px;
     height: 450px;
     position: absolute;
@@ -234,22 +234,39 @@ header .h_bottom .find input[type="submit"]{
 .slide .slide_wrap .box a{
     border-bottom: 3px solid #007cf9;
 }
-/* 박스 1번 설정 */
+/* 박스 1번, 3번 설정 */
 .slide .slide_wrap .box:nth-child(1) h2,
 .slide .slide_wrap .box:nth-child(1) p,
-.slide .slide_wrap .box:nth-child(1) a{
+.slide .slide_wrap .box:nth-child(3) h2,
+.slide .slide_wrap .box:nth-child(3) p{
     position: relative;     
-    top: 100px;
+    top: 90px;
     left: 70px;
     margin-bottom: 5px; 
 }
 .slide .slide_wrap .box:nth-child(1) h2:last-of-type,
-.slide .slide_wrap .box:nth-child(1) p:last-of-type{
-    margin-bottom: 30px;
+.slide .slide_wrap .box:nth-child(1) p:last-of-type,
+.slide .slide_wrap .box:nth-child(3) h2:last-of-type,
+.slide .slide_wrap .box:nth-child(3) p:last-of-type{
+    margin: 20px auto;
 }
-/* 박스 2번 설정 */
-/* 박스 3번 설정 */
-/* 박스 4번 설정 */
+/* 박스 2번,4번 설정 */
+.slide .slide_wrap .box:nth-child(2) h2,
+.slide .slide_wrap .box:nth-child(2) p,
+.slide .slide_wrap .box:nth-child(4) h2,
+.slide .slide_wrap .box:nth-child(4) p{
+    text-align: right;
+    position: relative;
+    top: 110px;
+    right: 80px;
+    margin-bottom: 5px;    
+}
+.slide .slide_wrap .box:nth-child(2) h2:last-of-type,
+.slide .slide_wrap .box:nth-child(2) p:last-of-type,
+.slide .slide_wrap .box:nth-child(4) h2:last-of-type,
+.slide .slide_wrap .box:nth-child(4) p:last-of-type{
+    margin: 25px auto;
+}
 
 
 .slide .slide_wrap .box:nth-child(1){
