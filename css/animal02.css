@@ -196,7 +196,6 @@ header .h_bottom .find input[type="submit"]{
   /* .dep1_txt에 호버 시 .hvr-underline-from-center 효과 주기 끝 */
 /* 헤더영역 끝 */
 /* 슬라이드 배너 영역 시작 */
-/* !! 슬라이드 배너 윗 부분에 100px 여백 주기 */
 .slide{
     max-width: 1200px;
     height: 450px;
@@ -204,8 +203,8 @@ header .h_bottom .find input[type="submit"]{
     overflow: hidden;
     clear: both;
     position: relative;
-    background-color: olive;
-    top: 100px;
+    /* !! 슬라이드 배너 윗 부분에 100px 여백 주기 */
+    top: 80px;
 }
 .slide .slide_wrap{
     width: 4800px;
