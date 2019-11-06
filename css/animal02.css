@@ -385,6 +385,7 @@ header .h_bottom .find input[type="submit"]{
     height: 600px;
     margin: 0 auto;
     background-color: #f6f9fb;
+    margin-bottom: 20px;
 }
 #save .save_top{
     width: 100%;
@@ -446,6 +447,80 @@ header .h_bottom .find input[type="submit"]{
     border-bottom: 0;
 }
 /* 구조동물공고 영역  id="save" 끝*/
+/* 입양대기 목록 영역 id="adopt" 시작*/
+#adopt{
+    max-width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: #f6f9fb;
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 22px;
+}
+#adopt .adopt_txt{
+    width: 280px;
+    height: 100%;
+    float: left;
+    margin-right: 20px;
+}
+p.title{
+    font-size: 26px;
+    margin: 20px 0 15px 20px;
+}
+#adopt .adopt_txt p{
+    margin-left: 20px;
+}
+#adopt .adopt_txt .a_t_icon{
+    width: 120px;
+    height: 50px;
+    /* left: 50%;    transform: translateX(-50%); */
+    float: right;
+    margin-top: 55%;
+}
+#adopt .adopt_txt .a_t_icon img{
+    width: 40px;
+    height: 40px;
+    float: left;    
+}
+#adopt .adopt_txt .a_t_icon ul li:nth-child(1) img{
+    margin-right: 20px;
+}
+/* 입양대기 사진 목록 부분 */
+#adopt .adopt_pic{
+    width: 900px;
+    height: 100%;
+    float: left;
+}
+#adopt .adopt_pic .box{
+    float: left;
+    width: 210px;
+    height: 100%;
+    border: 5px solid #f6f9fb;
+    box-sizing: border-box;
+    margin-right: 20px;
+}
+#adopt .adopt_pic .box:nth-child(4){
+    margin-right: 0;
+}
+#adopt .adopt_pic .box .box_pic{
+    width: 200px;
+    height: 160px;
+}
+#adopt .adopt_pic .box:nth-child(1) .box_pic{    
+    background: url(../images/adopt07_200x160.jpg) no-repeat;
+}
+#adopt .adopt_pic .box:nth-child(2) .box_pic{
+    background: url(../images/adopt08_200x160.jpg) no-repeat;}
+#adopt .adopt_pic .box:nth-child(3) .box_pic{
+    background: url(../images/adopt09_200x160.jpg) no-repeat;}
+#adopt .adopt_pic .box:nth-child(4) .box_pic{
+    background: url(../images/adopt10_200x160.jpg) no-repeat;}
+
+#adopt .adopt_pic .box .box_txt{
+    margin-top: 20px;
+}
+/* 입양대기 목록 영역 id="adopt" 끝*/
 
 /* 폰트 설정
 font-family: 'Nanum Gothic Coding', monospace;
