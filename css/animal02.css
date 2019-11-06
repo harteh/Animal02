@@ -221,7 +221,7 @@ header .h_bottom .find input[type="submit"]{
 }
 .slide .slide_wrap .box{ 
     /* display: inline-block; */
-    /* !! 인라인블락이면 왜 간격이 오류가 나는건지??  */
+    /* !! 인라인블락이면 왜 간격이 오류가 나는거지??  */
     float: left;
     width: 1200px;
     height: 450px;
@@ -246,7 +246,6 @@ header .h_bottom .find input[type="submit"]{
     font-weight: bold;
     color: #666;
 }
-
 
 /* 문장 여백 설정 */
 .slide .slide_wrap .box:nth-child(1) h2:last-of-type,
