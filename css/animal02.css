@@ -371,8 +371,7 @@ header .h_bottom .find input[type="submit"]{
     height: 40px;
     float: left;
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 25px;
     padding-right: 10px;
 }
 .support .s_btn .s_btn_box .s_btn_txt{
@@ -447,3 +446,7 @@ font-family: 'Nanum Gothic Coding', monospace;
 font-family: 'Nanum Brush Script', cursive;
 font-family: 'Ubuntu Mono', monospace;
 */
+
+footer{
+    height: 500px;
+}
