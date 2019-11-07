@@ -642,6 +642,9 @@ p.title{
     position: relative;
     left: 80px;
 }
+#donate span:hover{
+    font-weight: bold;
+}
 #donate a{
     line-height: 30px;
     color: #f6f9fb;
