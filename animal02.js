@@ -9,7 +9,6 @@ $(document).ready(function(){
         $(".dep2", this).stop().slideUp();
     });
 
-
     
 });
 // 메뉴 호버 설정 끝

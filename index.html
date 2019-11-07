@@ -4,10 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>animal shelter</title>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
-    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-    crossorigin="anonymous"></script>
-    <script src="animal02.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script|Nanum+Gothic+Coding|Ubuntu+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/animal02.css">
@@ -50,7 +46,8 @@
                                 <ul class="dep2">
                                     <li><a href="#">실험 동물</a></li>
                                     <li><a href="#">농장 동물</a></li>
-                                    <li><a href="#">보호·동물</a></li>
+                                    <li><a href="#">반려 동물</a></li>
+                                    <li><a href="#">보호재해대응</a></li>
                                 </ul>
                             </li>
                             <li class="dep1"><a href="#" class="dep1_txt">후원하기</a>
@@ -109,12 +106,6 @@
                 <p><a href="#">자세히보기</a></p>
             </div>
         </div>
-        <!-- <ul>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-        </ul> -->
         <!-- 버튼 부분 -->
         <img id="back" src="images/right-arrow.png" alt="이전">
         <img id="next" src="images/right-arrow.png" alt="다음">
@@ -168,11 +159,8 @@
             <p class="title">입양 대기</p>
             <p>예쁜 아이들의 가족이 되어 주세요</p>
             <div class="a_t_icon">
-                <ul>
-                    <li><img src="images/left-arrow-box.png" alt="이전"></li>
-                    <li><img src="images/right-arrow_box.png" alt="다음"></li>
-                    <!-- <li><img src="images/plus-box.png" alt="더보기"></li> -->
-                </ul>
+                <img id="ag_back" src="images/left-arrow-box.png" alt="이전">
+                <img id="ag_next" src="images/right-arrow_box.png" alt="다음">
             </div>
         </div>
         <div class="adopt_pic">
@@ -211,18 +199,98 @@
                     <p>발견장소 : 곡성전통시장</p>
                     <p>7개월 / 4kg</p>
                 </div>
-            </div>
+            </div>            
         </div>
     </div>
 <!-- 입양대기 목록 영역 끝 -->
 <!-- 포스터 영역 시작 -->
-    <div class="container" id="one"></div>
-    <div class="container" id="two"></div>
-    <div class="container" id="board"></div>
-    <div class="container" id="donate"></div>
+    <div class="container" id="poster_one">
+        <div class="con_txt">
+            <p>SUPPORT</p>
+            <p>동물과 함께 공존하는 세상</p>
+            <p>여러분의 관심과 사랑이 함께하면 현실이 됩니다.</p>
+            <p><a href="#">read more</a></p>
+        </div>
+        <div class="con_img"></div>
+    </div>
+    <div class="container" id="poster_two">
+        <div class="con_img"></div>
+        <div class="con_txt">
+            <p>ADOPT</p>
+            <p>반려동물</p>
+            <p>사지말고 입양하세요.</p>
+            <p><a href="#">read more</a></p>
+        </div>
+    </div>
+    <div class="container" id="board">
+        <div class="con_box" id="board_txt">
+            <p class="b_title">[구조이야기]</p>
+            <p class="b_sub_title">6차선 도로 한가운데로 가던 아기고양이 롤로.</p>
+            <p>폭우가 쏟아진 다음날, 비닐봉지마냥 6차선 도로를 배회하던 아기고양이, 꼬질꼬질하고 볼품없는 몸으로 마주한 활동가를 피해 차체 밑으로 숨었는데..!</p>
+        </div>
+        <div class="con_box" id="board_pic"></div>
+        <div class="con_box" id="board_txt">
+            <p class="b_title">[구조이야기]</p>
+            <p class="b_sub_title">목에 심한 상처를 입었던 목철이</p>
+            <p>지난달 한 공원에서 목이 심한 상처를 입은 고양이를 구조하였습니다. 목의 상처가 왜 생겼는지 정확하게 알 수 없었지만, 피부 이식을 해야 할 정도로 심각하게 찢겨 있었습니다. </p>
+        </div>
+        <div class="con_box" id="board_pic"></div>
+    </div>
+    <div class="container" id="donate">
+        <p>Save a Life. Rescue a Dog.</p>
+        <span><a href="#">후원하기</a></span>
+    </div>
 <!-- 포스터 영역 끝 -->
 <!-- 푸터 영역 시작 -->
-    <footer></footer>
+    <footer>
+        <div class="footer-wrap">
+            <div class="f-left">
+                <div class="f-l-top">
+                    <img src="images/logo01.jpg" alt="로고280x140">
+                </div>
+                <div class="f-l-bottom">
+                    <p>서울특별시 용산구 서빙고동 서빙고로 137#x260e 02.2077.9000</p>
+                    <p>Copyright &copy; 2019 Harteh. All rightreserved</p>
+                </div>
+            </div>
+            <div class="f-right">
+                <ul>
+                    <li><a href="#">유기동물구조관리</a></li>
+                    <li><a href="#">만려동물입양하기</a></li>
+                    <li><a href="#">구조활동보기</a></li>
+                    <li><a href="#">후원하기</a></li>
+                </ul>
+                <div class="f-submenu">
+                    <ul>
+                        <li><a href="#">실종유기동물목록</a></li>
+                        <li><a href="#">실종 시 대처방법</a></li>
+                        <li><a href="#">구조 시 대처방법</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">개</a></li>
+                        <li><a href="#">고양이</a></li>
+                        <li><a href="#">그 외 동물</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">실험동물</a></li>
+                        <li><a href="#">농장동물</a></li>
+                        <li><a href="#">반려동물</a></li>
+                        <li><a href="#">보호재해대응</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">정기후원</a></li>
+                        <li><a href="#">임시후원</a></li>
+                        <li><a href="#">1:1결연</a></li>
+                        <li><a href="#">후원 소식보기</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 <!-- 푸터 영역 끝 -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+    crossorigin="anonymous"></script>
+    <script src="animal02.js"></script>
 </body>
 </html>
