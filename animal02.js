@@ -49,3 +49,39 @@ $(document).ready(function(){
 
 })
 // 베너 슬라이드 설정 끝
+$(document).ready(function(){
+    var imgs;
+    var img_count;
+    var img_position = 1;
+    
+
+    imgs = $(".adopt_pic_wrap");
+    img_count = imgs.children().length;
+
+    //버튼을 클릭했을 대 함수 실행
+    $('#ag_next').click(function () {
+        next();
+    });
+    $('#ag_back').click(function (){        
+        back();
+    });
+
+    function back() {
+        if(1<img_position){
+            imgs.animate({
+                left:'+=210px'
+            });
+            img_position--;
+        }
+    }
+    function next() {
+        if(img_count>img_position){
+            imgs.animate({
+                left:'-=210px'
+            });
+            img_position++;
+        }
+    }
+
+
+})

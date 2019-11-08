@@ -236,7 +236,7 @@ header .h_bottom .find input[type="submit"]{
     font-size: 18px;
     line-height: 22px;
 }
- .slide .slide_wrap .box a{
+.slide .slide_wrap .box a{
     border-bottom: 3px solid #007cf9;
     padding-bottom: 10px;
 } 
@@ -517,7 +517,15 @@ p.title{
     margin-right: 20px;
 }
 /* 입양대기 사진 목록 부분 */
+/*  수정중 */
+#adopt .adopt_pic .adopt_pic_wrap{
+    width: 1900px;
+    height: 100%;
+    position: relative;
+}
+/*  수정중 */
 #adopt .adopt_pic{
+    overflow: hidden;
     max-width: 900px;
     height: 100%;
     float: left;
