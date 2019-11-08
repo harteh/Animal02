@@ -1,13 +1,11 @@
 @charset "utf-8";
 /* 헤더영역 시작 */
-* > p,
-a{
-    font-family: 'Nanum Gothic Coding', monospace;
-}
+/* * > p,a{ font-family: 'Nanum Gothic Coding', monospace;} */
+body{ font-family: 'NanumSquare', sans-serif; }
 header{
     width: 100%;
     height: 200px;
-    position: relative;
+    position: relative;    
 }
 /* 헤더 윗부분 */
 header .h_top_wrap{
@@ -225,7 +223,7 @@ header .h_bottom .find input[type="submit"]{
     float: left;
     width: 1200px;
     height: 450px;
-    font-family: 'Nanum Gothic Coding', monospace;
+    /* font-family: 'NanumSquare', sans-serif;  */
     position: relative;
 }
 .slide .slide_wrap .box h2{
@@ -453,7 +451,6 @@ header .h_bottom .find input[type="submit"]{
     height: 300px;
     margin: 0 auto;
     background-color: #f6f9fb;
-    font-family: 'Nanum Gothic Coding', monospace;
     font-size: 15px;
     font-weight: bold;
     line-height: 22px;
@@ -630,14 +627,15 @@ p.title{
     font-weight: bold;
     font-size: 40px;
     margin: 25px;    
+    margin-bottom: 15px;
 }
 #donate span{      
     display: inline-block;
     background-color: #007cf9;
-    width: 90px;
-    height: 30px;
+    width: 100px;
+    height: 45px;
     border: 1px solid #007cf9;
-    border-radius: 10px;
+    border-radius: 15px;
     text-align: center;
     position: relative;
     left: 80px;
@@ -646,9 +644,10 @@ p.title{
     font-weight: bold;
 }
 #donate a{
-    line-height: 30px;
+    line-height: 45px;
     color: #f6f9fb;
-    font-size: 16px;
+    font-size: 17px;
+    letter-spacing: 1.2px;
 }
 /* 포스터 영역 끝 class="container" */  
 /*푸터 영역 시작*/
@@ -667,13 +666,12 @@ footer .footer-wrap .f-left{
     width: 590px;
     float: left;
     margin-left: 10px;
-    margin-top: 80px;
+    margin-top: 50px;
 }
 footer .f-left .f-l-top{
     margin-bottom: 20px;
 }
 footer .f-left .f-l-bottom p{
-    font-family: 'Nanum Gothic Coding', monospace;
     margin-top: 10px;
     color: #f4f4f4;
 }
@@ -690,7 +688,6 @@ footer .f-right ul li{
     float: left;
 }
 footer .f-right ul li a{
-    font-family: 'Nanum Gothic Coding', monospace;
     text-decoration: none;
     color: #f4f4f4;
     font-weight: bold;    
