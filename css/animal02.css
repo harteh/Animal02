@@ -95,7 +95,7 @@ header .h_bottom .logo p{
 #nav .nav_list > li > a{
     display: block;
     text-align: center;
-    font-size: 16px;
+    font-size: 18px;
     color: #000;
     font-weight: 500;
     line-height: 100px;
@@ -236,14 +236,16 @@ header .h_bottom .find input[type="submit"]{
     font-size: 18px;
     line-height: 22px;
 }
-.slide .slide_wrap .box a{
+ .slide .slide_wrap .box a{
     border-bottom: 3px solid #007cf9;
     padding-bottom: 10px;
-}
+} 
 .slide .slide_wrap .box a:hover{
     font-weight: bold;
     color: #666;
 }
+
+.slide .slide_wrap .box p:last-child{}
 
 /* 문장 여백 설정 */
 .slide .slide_wrap .box:nth-child(1) h2:last-of-type,
@@ -409,6 +411,7 @@ header .h_bottom .find input[type="submit"]{
     clear: both;
     font-size: 16px;
 }
+/*  구조동물공고 아랫부분 */
 #save .save_bottom{
     width: 100%;
     height: 500px;
@@ -417,17 +420,21 @@ header .h_bottom .find input[type="submit"]{
     width: 100%;
     height: 100%;
 }
+/* 구조동물공고 영역 왼쪽 부분 :사진 1개*/
 #save .save_bottom .s_b_left{
     width: 500px;
     height: 500px;
     float: left;
     border: 5px solid #f6f9fb;
     box-sizing: border-box;
+    position: relative;
 }
+
+/* 구조동물공고 영역 오른쪽 부분 : 사진 2 x 2 */
 #save .save_bottom .s_b_right{
     width: 700px;
     height: 250px;
-    float: left;
+    float: left;    
 }
 #save .save_bottom .s_b_right .s_b_r_box{
     float: left;
@@ -435,7 +442,32 @@ header .h_bottom .find input[type="submit"]{
     height: 250px;
     border: 5px solid #f6f9fb;
     box-sizing: border-box;
+    position: relative;
 }
+/* 호버 시 나타나는 안내 문구 부분 설정 */
+#save .save_bottom .s_b_left .box_content {width: 495px;}
+#save .save_bottom .s_b_right .s_b_r_box .box_content {width: 345px;}
+#save .box_content{
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 99;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+#save .save_bottom .box_content:hover {
+    height: 100px;
+}
+#save .box_content h1{
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+/* 여백 설정 */
 #save .save_bottom .s_b_left,
 #save .save_bottom .s_b_right .s_b_r_box:nth-child(odd){
     border-right: 0px;
@@ -578,6 +610,8 @@ p.title{
     height: 100%;
     float: left;
 }
+
+
 /* 3번 포스터 부분 : 게시판 글+사진*/
 #board{
     height: 200px;      
@@ -593,13 +627,13 @@ p.title{
 /* 텍스트박스 부분 */
 #board_txt{
     width: 100%;
-    height: 100%;    
+    height: 195px;
 }
 #board_txt p{
     color:#000;
     font-size: 14px;
     padding: 0px;
-    margin: 12px;
+    margin: 12px;    
 }
 #board_txt p.b_title{
     font-size: 20px;
@@ -607,6 +641,9 @@ p.title{
 }
 #board_txt p.b_sub_title{
     font-size: 16px;
+}
+#board_txt p:last-child{
+    line-height: 17px;
 }
 /* 사진박스 부분 */
 #board .con_box:nth-child(2){
@@ -639,6 +676,7 @@ p.title{
     text-align: center;
     position: relative;
     left: 80px;
+    cursor: pointer;
 }
 #donate span:hover{
     font-weight: bold;
