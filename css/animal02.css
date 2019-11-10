@@ -538,22 +538,19 @@ p.title{
     box-sizing: border-box;
     margin-right: 20px;
 }
-#adopt .adopt_pic .box:nth-child(4){
-    margin-right: 0;
-}
 #adopt .adopt_pic .box .box_pic{
     width: 200px;
     height: 160px;
 }
-#adopt .adopt_pic .box:nth-child(1) .box_pic{    
-    background: url(../images/adopt07_200x160.jpg) no-repeat;
-}
-#adopt .adopt_pic .box:nth-child(2) .box_pic{
-    background: url(../images/adopt08_200x160.jpg) no-repeat;}
-#adopt .adopt_pic .box:nth-child(3) .box_pic{
-    background: url(../images/adopt09_200x160.jpg) no-repeat;}
-#adopt .adopt_pic .box:nth-child(4) .box_pic{
-    background: url(../images/adopt10_200x160.jpg) no-repeat;}
+#adopt .adopt_pic .box:nth-child(1) .box_pic{ background: url(../images/adopt07_200x160.jpg) no-repeat;}
+#adopt .adopt_pic .box:nth-child(2) .box_pic{ background: url(../images/adopt08_200x160.jpg) no-repeat;}
+#adopt .adopt_pic .box:nth-child(3) .box_pic{ background: url(../images/adopt09_200x160.jpg) no-repeat;}
+#adopt .adopt_pic .box:nth-child(4) .box_pic{ background: url(../images/adopt10_200x160.jpg) no-repeat;}
+
+#adopt .adopt_pic .box:nth-child(5) .box_pic{ background: url(../images/adopt_02.jpg) center/260px 160px no-repeat;}
+#adopt .adopt_pic .box:nth-child(6) .box_pic{ background: url(../images/adopt_03.jpg) bottom/200px 260px no-repeat;}
+#adopt .adopt_pic .box:nth-child(7) .box_pic{ background: url(../images/adopt_04.jpg) bottom/200px 240px no-repeat;}
+#adopt .adopt_pic .box:nth-child(8) .box_pic{ background: url(../images/adopt_05.jpg) bottom/200px 160px no-repeat;}
 
 #adopt .adopt_pic .box .box_txt{
     margin-top: 20px;
@@ -626,7 +623,7 @@ p.title{
 }
 #board .con_box{
     float: left;
-    width: calc(100% / 4 - 26px);
+    width: calc(100% / 4 - 6px);
     height: 100%;
     border: 3px solid #f6f9fb;
     overflow: hidden;
@@ -663,7 +660,6 @@ p.title{
 /*  4번 포스터 부분 : 후원 */
 #donate{
     height: 200px;
-    margin-bottom: 0;
     background: url(../images/container05.png) no-repeat;
 }
 #donate p{
