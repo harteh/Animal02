@@ -648,7 +648,8 @@ p.title{
     font-size: 16px;
 }
 #board_txt p:last-child{
-    line-height: 17px;
+    line-height: 18px;
+    font-weight: 400;
 }
 /* 사진박스 부분 */
 #board .con_box:nth-child(2){
