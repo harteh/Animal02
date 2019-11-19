@@ -69,7 +69,7 @@ $(document).ready(function(){
     function back() {
         if(1<img_position){
             imgs.animate({
-                left:'+=210px'
+                left:'+=230px'
             });
             img_position--;
         }
@@ -77,7 +77,7 @@ $(document).ready(function(){
     function next() {
         if(img_count>img_position){
             imgs.animate({
-                left:'-=210px'
+                left:'-=230px'
             });
             img_position++;
         }
@@ -85,3 +85,19 @@ $(document).ready(function(){
 
 
 })
+
+/*Add class when scroll down*/
+$(window).scroll(function(event){
+    var scroll = $(window).scrollTop();
+  if (scroll >= 50) {
+      $(".go-top").addClass("show");
+  } else {
+      $(".go-top").removeClass("show");
+  }
+});
+/*Animation anchor*/
+$('a').click(function(){
+  $('html, body').animate({
+      scrollTop: $( $(this).attr('href') ).offset().top
+  }, 1000);
+});

@@ -1,6 +1,5 @@
 @charset "utf-8";
 /* 헤더영역 시작 */
-/* * > p,a{ font-family: 'Nanum Gothic Coding', monospace;} */
 body{ font-family: 'NanumSquare', sans-serif; }
 header{
     width: 100%;
@@ -42,8 +41,6 @@ header .h_bottom::after{
 /* 로고 부분 */
 header .h_bottom .logo{
     width: 400px;
-    /* !! 헤더 가로길이 %로 변경 */
-    /* width: 30%; */
     height: 130px;
     margin: auto 20px;
     float: left;
@@ -82,8 +79,6 @@ header .h_bottom .logo p{
 }
 .nav_wrap #nav{
     width: 600px;
-    /* !! 헤더 가로길이 %로 변경 */
-    /* width: 50%; */
     height: 130px;
     margin: 0 auto;
     float: left;
@@ -133,8 +128,6 @@ header .h_bottom .logo p{
 /* 찾기 버튼 부분 */
 header .h_bottom .find{
     width: 150px;
-    /* !! 헤더 가로길이 %로 변경 */
-    /* width: 15%; */
     height: 130px;
     float: left;
     position: relative;
@@ -181,7 +174,6 @@ header .h_bottom .find input[type="submit"]{
     left: 51%;
     right: 51%;
     top: 70px;
-    /* bottom: 0; */
     background: #007cf9;
     height: 4px;
     -webkit-transition-property: left, right;
@@ -219,11 +211,9 @@ header .h_bottom .find input[type="submit"]{
 }
 .slide .slide_wrap .box{ 
     /* display: inline-block; */
-    /* !! 인라인블락이면 왜 간격이 오류가 나는거지??  */
     float: left;
     width: 1200px;
     height: 450px;
-    /* font-family: 'NanumSquare', sans-serif;  */
     position: relative;
 }
 .slide .slide_wrap .box h2{
@@ -493,6 +483,7 @@ header .h_bottom .find input[type="submit"]{
     height: 100%;
     float: left;
     margin-right: 20px;
+    position: relative;
 }
 p.title{
     font-size: 26px;
@@ -500,6 +491,15 @@ p.title{
 }
 #adopt .adopt_txt p{
     margin-left: 20px;
+}
+#adopt .adopt_txt p:nth-child(2)::after{
+    content: "";
+    width: 250px;
+    height: 5px;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    background-color: #007cf9;
 }
 #adopt .adopt_txt .a_t_icon{
     width: 120px;
@@ -638,7 +638,7 @@ p.title{
     color:#000;
     font-size: 14px;
     padding: 0px;
-    margin: 12px;    
+    margin: 10px;    
 }
 #board_txt p.b_title{
     font-size: 20px;
@@ -648,7 +648,7 @@ p.title{
     font-size: 16px;
 }
 #board_txt p:last-child{
-    line-height: 18px;
+    line-height: 20px;
     font-weight: 400;
 }
 /* 사진박스 부분 */
@@ -660,8 +660,8 @@ p.title{
 }
 /*  4번 포스터 부분 : 후원 */
 #donate{
-    height: 200px;
-    background: url(../images/container05.png) no-repeat;
+    height: 280px;
+    background: url(../images/container05.png) no-repeat center/cover;
 }
 #donate p{
     font-family: 'Ubuntu Mono', monospace;
@@ -670,7 +670,9 @@ p.title{
     font-size: 40px;
     margin: 25px;    
     margin-bottom: 15px;
+    padding-top: 70px;
 }
+
 #donate span{      
     display: inline-block;
     background-color: #007cf9;
@@ -712,7 +714,11 @@ footer .footer-wrap .f-left{
     margin-top: 50px;
 }
 footer .f-left .f-l-top{
+    width: 280px;
+    height: 140px;
     margin-bottom: 20px;
+    background: url(../images/logo01.png) no-repeat bottom;
+    background-size: 80%;
 }
 footer .f-left .f-l-bottom p{
     margin-top: 10px;
@@ -752,7 +758,35 @@ footer .footer-wrap .f-right .f-submenu ul li{
     text-align: center;
 }
 /* 푸터 영역 끝*/
+/* 위로가기 버튼 영역 시작 */
 
+.go-top{
+	display:block;
+	width:50px;
+	height:50px;
+	line-height:52px;
+	text-align:center;
+    font-size:1rem;
+    font-weight: bold;
+	position:fixed;
+	bottom:-50px;
+	right:20px;
+    transition: all 1s ease;
+	background-color:#007cf9;
+	color:#FFFFFF;
+	text-decoration:none;
+	border-radius:50%;
+}
+
+.go-top.show{
+	bottom:20px;
+}
+
+.go-top:hover{
+	background-color:#0367cc;
+	color:#FFFFFF;
+}
+/* 위로가기 버튼 영역 끝 */
 
 
 /* 폰트 설정
