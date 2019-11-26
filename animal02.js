@@ -1,20 +1,16 @@
-// 메뉴 호버 설정 시작
+
 $(document).ready(function(){
 
-
+    // 메뉴 호버 설정 시작
     $("#nav .nav_list .dep1").mouseover(function () {
         $(".dep2", this).slideDown();
     });
     $("#nav .nav_list .dep1").mouseleave(function () {
         $(".dep2", this).stop().slideUp();
     });
+    // 메뉴 호버 설정 끝
 
-    
-});
-// 메뉴 호버 설정 끝
-
-// 베너 슬라이드 설정 시작
-$(document).ready(function(){
+    // 베너 슬라이드 설정 시작
     var imgs;
     var img_count;
     var img_position = 1;
@@ -46,10 +42,10 @@ $(document).ready(function(){
             img_position++;
         }
     }
+    // 베너 슬라이드 설정 끝
 
-})
-// 베너 슬라이드 설정 끝
-$(document).ready(function(){
+
+    // 갤러리 베너 슬라이드 설정 시작
     var imgs;
     var img_count;
     var img_position = 1;
@@ -82,9 +78,11 @@ $(document).ready(function(){
             img_position++;
         }
     }
+    // 갤러리 베너 슬라이드 설정 끝
 
+    
+});
 
-})
 
 /*Add class when scroll down*/
 $(window).scroll(function(event){

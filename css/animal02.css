@@ -38,6 +38,19 @@ header .h_bottom::after{
     clear: both;
     display: block;
 }
+/* 모바일 아이콘 부분 */
+header .h_bottom .m_icon{
+    display: none;
+    float: left;
+    position: absolute;
+    left: 25px;
+    top: 15px;
+}
+header .h_bottom .m_icon img{
+    width: 45px;
+    height: 45px;
+}
+/* 모바일 아이콘 부분 끝*/
 /* 로고 부분 */
 header .h_bottom .logo{
     width: 400px;
@@ -73,6 +86,25 @@ header .h_bottom .logo p{
     font-size: 21px;
     margin-left: 40px;
 }
+/* 모바일 네비게이션 부분 */
+.menu-btn{
+    position: absolute;
+    z-index: 10;
+    right: 25px;
+    top: 25px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+    display: none;
+}
+.menu-btn .btn-line{
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: #000;
+    transition: all 0.5s ease-out;
+}
+/*  수정 중 */
+
 /* 네비게이션 부분 */
 .nav_wrap{
     max-width: 100%;
@@ -334,7 +366,7 @@ header .h_bottom .find input[type="submit"]{
 }
 
 .support .s_txt span{ font-size: 46px;}
-#blue{ color: #007cf9; }
+span.blue{ color: #007cf9; }
 
 /* 후원버튼 오른쪽 아이콘 부분 */
 .support .s_btn{
@@ -624,30 +656,31 @@ p.title{
 #board .con_box{
     float: left;
     width: calc(100% / 4 - 6px);
-    height: 100%;
+    height: 100%;    
     border: 3px solid #f6f9fb;
     overflow: hidden;
     padding: 0;    
 }
 /* 텍스트박스 부분 */
-#board_txt{
+.board_txt{
     width: 100%;
     height: 195px;
 }
-#board_txt p{
+.board_txt p{
     color:#000;
     font-size: 14px;
     padding: 0px;
     margin: 10px;    
 }
-#board_txt p.b_title{
+#board p.b_title{
     font-size: 20px;
     font-weight: bold;
+    margin: 5px;
 }
-#board_txt p.b_sub_title{
+.board_txt p.b_sub_title{
     font-size: 16px;
 }
-#board_txt p:last-child{
+.board_txt p:last-child{
     line-height: 20px;
     font-weight: 400;
 }

@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>animal shelter</title>
-    <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script|Nanum+Gothic+Coding|Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/animal02.css">
+    <link rel="stylesheet" href="css/animal_screen.css">
 </head>
 
 <body>
@@ -20,10 +23,20 @@
         </div>
         <div class="h_bottom">
             <!-- 로고 영역 -->
+            <!-- 모바일 아이콘 영역 -->
+            <div class="m_icon">
+                <img src="images/s_icon02.png" alt="모바일아이콘">
+            </div>
             <div class="logo">
                 <h1>ASlp</h1>
                 <p>Animal Shelter</p>
                 <p>Love Peace</p>
+            </div>
+            <!-- 모바일 네비게이션 영역 -->
+            <div class="menu-btn">
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
             </div>
             <!-- 네비게이션 영역 -->
             <div class="nav_wrap">
@@ -116,7 +129,7 @@
     <!-- 후원버튼 영역 시작 : 텍스트, 버튼-->
     <div class="support">
         <div class="s_txt">
-            <span id="blue">여러분의 후원</span>이 <span id="blue">힘</span>입니다.
+            <span class="blue">여러분의 후원</span>이 <span class="blue">힘</span>입니다.
         </div>
         <div class="s_btn">
             <ul>
@@ -144,7 +157,7 @@
             </div>
             <div class="s_b_right">
                 <div class="s_b_r_box">
-                    <img src="images/adopt02_350x250.jpg"" alt=" 350x250">
+                    <img src="images/adopt02_350x250.jpg" alt=" 350x250">
                     <div class="box_content">
                         <h1>실종 신고 접수</h1>
                         <p>남아 / 양주시 마전동에서 실종, 건강 양호</p>
@@ -283,18 +296,18 @@
         </div>
     </div>
     <div class="container" id="board">
-        <div class="con_box" id="board_txt">
+        <div class="con_box board_txt">
             <p class="b_title">[구조이야기]</p>
             <p class="b_sub_title">6차선 도로 한가운데로 가던 아기고양이 롤로.</p>
             <p>폭우가 쏟아진 다음날, 비닐봉지마냥 6차선 도로를 배회하던 아기고양이, 꼬질꼬질하고 볼품없는 몸으로 마주한 활동가를 피해 차체 밑으로 숨었는데..!</p>
         </div>
-        <div class="con_box" id="board_pic"></div>
-        <div class="con_box" id="board_txt">
+        <div class="con_box board_pic"></div>
+        <div class="con_box board_txt">
             <p class="b_title">[구조이야기]</p>
             <p class="b_sub_title">목에 심한 상처를 입었던 목철이</p>
             <p>지난달 한 공원에서 목이 심한 상처를 입은 고양이를 구조하였습니다. 목의 상처가 왜 생겼는지 정확하게 알 수 없었지만, 피부 이식을 해야 할 정도로 심각하게 찢겨 있었습니다. </p>
         </div>
-        <div class="con_box" id="board_pic"></div>
+        <div class="con_box board_pic"></div>
     </div>
     <div class="container" id="donate">
         <p>Save a Life. Rescue a Animal.</p>
