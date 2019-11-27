@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
 
     // 메뉴 호버 설정 시작
@@ -9,6 +8,9 @@ $(document).ready(function(){
         $(".dep2", this).stop().slideUp();
     });
     // 메뉴 호버 설정 끝
+});
+    
+$(document).ready(function(){
 
     // 베너 슬라이드 설정 시작
     var imgs;
@@ -43,8 +45,11 @@ $(document).ready(function(){
         }
     }
     // 베너 슬라이드 설정 끝
+    
+});
 
-
+$(document).ready(function(){
+    
     // 갤러리 베너 슬라이드 설정 시작
     var imgs;
     var img_count;
@@ -79,7 +84,6 @@ $(document).ready(function(){
         }
     }
     // 갤러리 베너 슬라이드 설정 끝
-
     
 });
 
