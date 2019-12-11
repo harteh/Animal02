@@ -3,6 +3,10 @@
 /*@media screen and (min-width: 641px) and (max-width: 1024px){}*/
 /* 반응형 모바일 설정*/
 @media screen and (max-width: 640px){
+    header .h_top p{
+        font-size: 10px;
+    }
+
     header .h_bottom{
         max-width: 100%;
         position: relative;
@@ -13,7 +17,7 @@
     
     header .h_bottom .logo{
         height: 80px;
-        transform: translateX(50%);
+        margin-left: 40%;
     }
     header .h_bottom .logo p,
     header .h_bottom .logo h1::after{
@@ -54,7 +58,7 @@
     .support .s_txt{
         font-size: 20px;
         padding-left: 3%;
-        width: 40%;
+        width: 35%;
     }
     .support .s_txt span.blue{
         font-size: 22px;
@@ -65,8 +69,8 @@
     }
     .support .s_btn ul li{
         width: 30%;
-        background-size: 25px 25px;
-        background-position: left 3px center;
+        background-size: 40%;
+        background-position: left 1px center;
         margin-right: 5%;
     }
     .support .s_btn ul li:nth-child(3){
@@ -74,7 +78,7 @@
     }
     .support .s_btn ul li a{
         left: 33px;
-        font-size: 14px;
+        font-size: 12px;
     }
     /* 구조동물공고 영역  id="save" 시작*/
     #save{
@@ -89,8 +93,8 @@
         height: 300px;
     }     
     #save .save_bottom .s_b_right .s_b_r_box{
-        width: 230px;
-        height: 230px;
+        width: 200px;
+        height: 200px;
         float: left;
     }
     #save .save_bottom .s_b_right .s_b_r_box .box_content{
