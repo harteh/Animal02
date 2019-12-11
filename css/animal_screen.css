@@ -7,10 +7,13 @@
         max-width: 100%;
         position: relative;
     }
-    header .h_bottom .m_icon{ display: block; }
+    header .h_bottom .m_icon{ 
+        display: block; 
+    }
+    
     header .h_bottom .logo{
         height: 80px;
-        margin-left: 250px;
+        transform: translateX(50%);
     }
     header .h_bottom .logo p,
     header .h_bottom .logo h1::after{
@@ -18,6 +21,7 @@
     }
     .menu-btn{ display: block; }
     .nav_wrap{ display: none; }
+
     header .h_bottom .find{
         width: 100%;
         height: 100px;
@@ -38,11 +42,127 @@
         margin-top: 5px;
         left: 90%;
     }
-    .slide{ display: none; }
-    .support > div{ 
-        clear: both;
+    /* 헤더 영역 끝 */
+    /* 슬라이드 영역 시작 */
+    .slide{ 
+        display: none;        
+    }
+    /* 슬라이드 영역 끝 */
+    .support{
+        margin-top: 10%;
+    }
+    .support .s_txt{
+        font-size: 20px;
+        padding-left: 3%;
+        width: 40%;
+    }
+    .support .s_txt span.blue{
+        font-size: 22px;
+    }
+    .support .s_btn{
+        margin-bottom: 5%;
+        width: 50%;
+    }
+    .support .s_btn ul li{
+        width: 30%;
+        background-size: 25px 25px;
+        background-position: left 3px center;
+        margin-right: 5%;
+    }
+    .support .s_btn ul li:nth-child(3){
+        margin-right: 0;
+    }
+    .support .s_btn ul li a{
+        left: 33px;
+        font-size: 14px;
+    }
+    /* 구조동물공고 영역  id="save" 시작*/
+    #save{
+        width: 100%;
+        height: 560px;
+    }  
+    #save .save_bottom .s_b_left{
+        display: none;
+    }
+    #save .save_bottom .s_b_right{
+        width: 100%;
+        height: 300px;
+    }     
+    #save .save_bottom .s_b_right .s_b_r_box{
+        width: 230px;
+        height: 230px;
+        float: left;
+    }
+    #save .save_bottom .s_b_right .s_b_r_box .box_content{
+        width: 100%;
+        font-size: 12px;
+    }
+    /* 입양대기 목록 영역 id="adopt" 시작 */  
+    #adopt{
+        height: 400px;
+        overflow: hidden;
+    }
+    #adopt .adopt_txt{
         height: 100px;
+    }
+    #adopt .adopt_txt p:nth-child(2)::after{
+        top: 80%;
+    }
+    #adopt .adopt_txt .a_t_icon{        
+        position: absolute;
+        margin-top: 0;
+        top: 40%;
+        right: -50%;
+    }
+    #adopt .adopt_pic{
+        height: 300px;
+    }
+     /* 포스터 영역 시작 class="container" */
+    .container{
         max-width: 100%;
+        overflow: hidden;
+    }
+    .container p{
+        font-size: 16px;
+        padding-left: 10%;
+    }
+    .container p:nth-child(1){
+        font-size: 20px;
+    }
+    #poster_one .con_img{
+        background-position: 50%;
+    }
+    #poster_two .con_img{
+        width: 70%;
+        background-position: 78%;
+    }
+    #poster_two .con_txt{
+        width: 30%;
+    }
+    /* 3번 포스터 부분 : 게시판 글+사진*/
+    .board_txt p{
+        font-size: 12px;
+        margin: 0;
+    }
+    #board p:nth-child(1){
+        padding: 2% auto;
+    }
+    #board p.b_title{
+        font-size: 18px;
+        margin: 1%;
+    }
+    .board_txt p.b_sub_title{
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .board_txt p:last-child{
+        line-height: 14px;
     }
 
+    /*푸터 영역 시작*/
+    footer,
+    footer .footer-wrap{
+        max-width: 100%;
+        overflow: hidden;
+    }
 }
