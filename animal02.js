@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+    $('a[href="#"]').click(function(e) {
+        e.preventDefault();
+    })
+
     // 메뉴 호버 설정 시작
     $("#nav .nav_list .dep1").mouseover(function () {
         $(".dep2", this).slideDown();
@@ -8,9 +12,6 @@ $(document).ready(function(){
         $(".dep2", this).stop().slideUp();
     });
     // 메뉴 호버 설정 끝
-});
-    
-$(document).ready(function(){
 
     // 베너 슬라이드 설정 시작
     var imgs;
@@ -31,7 +32,7 @@ $(document).ready(function(){
     function back() {
         if(1<img_position){
             imgs.animate({
-                left:'+=1200px'
+                left:'+=100%'
             });
             img_position--;
         }
@@ -39,25 +40,23 @@ $(document).ready(function(){
     function next() {
         if(img_count>img_position){
             imgs.animate({
-                left:'-=1200px'
+                left:'-=100%'
             });
             img_position++;
         }
     }
     // 베너 슬라이드 설정 끝
-    
 });
-
+    
 $(document).ready(function(){
-    
-    // 갤러리 베너 슬라이드 설정 시작
-    var imgs;
-    var img_count;
-    var img_position = 1;
+    // 입양대기목록 슬라이드 설정 시작
+    var adp_imgs;
+    var adp_img_count;
+    var adp_img_position = 1;
     
 
-    imgs = $(".adopt_pic_wrap");
-    img_count = imgs.children().length;
+    adp_imgs = $(".adopt_pic_wrap");
+    adp_img_count = adp_imgs.children().length;
 
     //버튼을 클릭했을 대 함수 실행
     $('#ag_next').click(function () {
@@ -68,25 +67,24 @@ $(document).ready(function(){
     });
 
     function back() {
-        if(1<img_position){
-            imgs.animate({
+        if(1<adp_img_position){
+            adp_imgs.animate({
                 left:'+=230px'
             });
-            img_position--;
+            adp_img_position--;
         }
     }
     function next() {
-        if(img_count>img_position){
-            imgs.animate({
+        if(adp_img_count>adp_img_position){
+            adp_imgs.animate({
                 left:'-=230px'
             });
-            img_position++;
+            adp_img_position++;
         }
     }
-    // 갤러리 베너 슬라이드 설정 끝
-    
-});
+    // 입양대기목록 슬라이드 설정 끝
 
+})
 
 /*Add class when scroll down*/
 $(window).scroll(function(event){
@@ -96,10 +94,4 @@ $(window).scroll(function(event){
   } else {
       $(".go-top").removeClass("show");
   }
-});
-/*Animation anchor*/
-$('a').click(function(){
-  $('html, body').animate({
-      scrollTop: $( $(this).attr('href') ).offset().top
-  }, 1000);
 });
